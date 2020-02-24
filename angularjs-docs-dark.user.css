@@ -11,46 +11,66 @@
 
 @-moz-document url-prefix("https://docs.angularjs.org/") {
   body {
-    background-color: #130d0d;
+    background-color: #1c1d21;
     color: #ddd;
   }
-  
-  .variables-matrix tr:nth-child(even) td, .variables-matrix th {
+
+  .variables-matrix tr:nth-child(even) td,
+  .variables-matrix th {
     background-color: #1f1818;
   }
-  
-  .variables-matrix, .variables-matrix td, .variables-matrix td + td, .variables-matrix th + th {
+
+  .variables-matrix,
+  .variables-matrix td,
+  .variables-matrix td+td,
+  .variables-matrix th+th {
     border-color: #291f1f;
   }
-  
+
   .pln {
     color: #ddd;
   }
-  
+
   .com {
-    color: #404040;
+    color: #515151;
   }
-  
+
+  .minerr-errmsg {
+    color: #eee;
+  }
+
   .kwd {
     color: #55ff55;
   }
-  
+
   .pun {
     color: #595d65
   }
-  
+
   .tag {
     color: #428bca;
   }
-  
-  pre, code, p > code {
+
+  pre,
+  code,
+  p>code {
     background-color: #03040a;
   }
-  
-  .sup-header, #navbar-sub, #navbar-notice .navbar-inner {
+
+  .sup-header,
+  #navbar-sub,
+  #navbar-notice .navbar-inner {
     background-color: rgba(3, 4, 10, 0.88)
   }
-  
+
+  .nav-index-listing>a {
+    color: #888 !important;
+  }
+
+  .nav-index-section>a {
+    color: #fff !important;
+  }
+
   .picker {
     border: 1px solid #000000;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #191919));
@@ -59,21 +79,25 @@
     background-image: -o-linear-gradient(#000000, #191919);
     background-image: linear-gradient(#000000, #191919);
   }
-  
-  .main-body-grid .grid-left::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: #F5F5F5;
+
+  a[back-to-top] {
+    cursor: pointer;
   }
-  
+
+  .main-body-grid .grid-left::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #7d7d7d;
+  }
+
   .main-body-grid .grid-left::-webkit-scrollbar {
     width: 12px;
-    background-color: #F5F5F5;
+    background-color: #7d7d7d;
   }
-  
+
   .main-body-grid .grid-left::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+    background-color: #444;
   }
 }
